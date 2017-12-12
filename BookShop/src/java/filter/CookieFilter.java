@@ -23,8 +23,7 @@ import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
  
-import beans.UserAccount;
-import utils.DBUtils;
+
 import utils.MyUtils;
  
 @WebFilter(filterName = "cookieFilter", urlPatterns = { "/*" })
@@ -49,9 +48,7 @@ public class CookieFilter implements Filter {
         HttpServletRequest req = (HttpServletRequest) request;
         HttpSession session = req.getSession();
 
-        // 
-      
- 
+        
         // Connection was created in JDBCFilter.
         Connection conn = MyUtils.getStoredConnection(request);
  
