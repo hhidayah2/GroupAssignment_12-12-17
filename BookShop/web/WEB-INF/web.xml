@@ -2,19 +2,19 @@
 <web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
     <servlet>
         <servlet-name>CatalogPage</servlet-name>
-        <servlet-class>coreservlets.CatalogPage</servlet-class>
+        <servlet-class>servelt.CatalogPage</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>KidsBooksPage</servlet-name>
-        <servlet-class>coreservlets.KidsBooksPage</servlet-class>
+        <servlet-class>servelt.KidsBooksPage</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>OrderPage</servlet-name>
-        <servlet-class>coreservlets.OrderPage</servlet-class>
+        <servlet-class>servelt.OrderPage</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>TechBooksPage</servlet-name>
-        <servlet-class>coreservlets.TechBooksPage</servlet-class>
+        <servlet-class>servelt.TechBooksPage</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>CatalogPage</servlet-name>
@@ -38,7 +38,7 @@
         </session-timeout>
     </session-config>
     <welcome-file-list>
-	<welcome-file>
+        <welcome-file>
             index.jsp
         </welcome-file>
     </welcome-file-list>

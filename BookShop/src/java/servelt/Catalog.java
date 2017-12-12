@@ -1,4 +1,4 @@
-package coreservlets;
+package servelt;
 
 /** A catalog that lists the items available in inventory.
  *  <P>

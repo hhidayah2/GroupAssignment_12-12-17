@@ -1,4 +1,4 @@
-package coreservlets;
+package servelt;
 
 /** Describes a catalog item for on-line store. The itemID
  *  uniquely identifies the item, the short description

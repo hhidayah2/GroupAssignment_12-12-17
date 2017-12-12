@@ -1,4 +1,4 @@
-package coreservlets;
+package servelt;
 
 import java.io.*;
 import javax.servlet.*;

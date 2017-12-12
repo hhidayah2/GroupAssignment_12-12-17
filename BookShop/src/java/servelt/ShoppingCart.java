@@ -1,4 +1,4 @@
-package coreservlets;
+package servelt;
 
 import java.util.*;
 

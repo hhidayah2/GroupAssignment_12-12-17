@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package coreservlets.conn;
+package conn;
 
 /**
  *
@@ -21,7 +21,7 @@ public class MySQLConnUtils {
      String hostName = "localhost";
      String dbName = "bookshop";
      String userName = "root";
-     String password = "123";
+     String password = "1234";
      return getMySQLConnection(hostName, dbName, userName, password);
  }
   

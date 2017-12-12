@@ -1,4 +1,4 @@
-package coreservlets;
+package servelt;
 
 /** A specialization of the CatalogPage servlet that
  *  displays a page selling two famous computer books.
