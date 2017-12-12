@@ -86,7 +86,7 @@ public class OrderPage extends HttpServlet {
           ("<TABLE BORDER=1 ALIGN=\"CENTER\">\n" +
            "<TR BGCOLOR=\"#FFAD00\">\n" +
            "  <TH>Item ID<TH>Description\n" +
-           "  <TH>Unit Cost<TH>Number<TH>Total Cost");
+           "  <TH>Unit Cost<TH>Number<TH>Total Cost <TH>Delete");
         ItemOrder order;
         // Rounds to two decimal places, inserts dollar
         // sign (or other currency symbol), etc., as
