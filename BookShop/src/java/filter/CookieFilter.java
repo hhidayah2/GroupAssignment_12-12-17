@@ -48,31 +48,16 @@ public class CookieFilter implements Filter {
             throws IOException, ServletException {
         HttpServletRequest req = (HttpServletRequest) request;
         HttpSession session = req.getSession();
- 
-        UserAccount userInSession = MyUtils.getLoginedUser(session);
+
         // 
-        if (userInSession != null) {
-            session.setAttribute("COOKIE_CHECKED", "CHECKED");
-            chain.doFilter(request, response);
-            return;
-        }
+      
  
         // Connection was created in JDBCFilter.
         Connection conn = MyUtils.getStoredConnection(request);
  
         // Flag check cookie
         String checked = (String) session.getAttribute("COOKIE_CHECKED");
-        if (checked == null && conn != null) {
-            String userName = MyUtils.getUserNameInCookie(req);
-            try {
-                UserAccount user = DBUtils.findUser(conn, userName);
-                MyUtils.storeLoginedUser(session, user);
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-            // Mark checked Cookies.
-            session.setAttribute("COOKIE_CHECKED", "CHECKED");
-        }
+      
  
         chain.doFilter(request, response);
     }
